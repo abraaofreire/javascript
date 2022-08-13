@@ -6,7 +6,7 @@ function verificar() {
     ano = Number(txtano.value)
     result = document.getElementById('result')
 
-    if (ano > year || ano == '') {
+    if (ano > year || txtano.value.length == 0) {
         window.alert('[ERRO] Verifique os dados e tente novamente!')
     } else {
         idade = Number.parseInt(year - ano)
